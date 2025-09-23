@@ -1,3 +1,16 @@
 inlet PCB meeting 9/22
 
+Max- need a low pass filter for the noise of the amplifier to spice simulation and build circuit will use bode plot or function generator try to get away using lm741 for low pass filter.
 
+Jeremy- Work on presentation, C++ doc reading
+
+Ethan- Write SPI drivers for PICO 
+
+Lucian- Fixing the network interface on raspberry pi 0 2 w
+	do schedule for the team
+	Invite Max and Ethan back to the github and abigail
+	Find out max rpm from mechanical team
+	
+Abigail- practice simulink and read up on npss in smu for simulink
+
+from now on all deliverables will be due on Wednesday 
