@@ -1,0 +1,26 @@
+9/24 PCB meeting
+
+today we will be identifying the progress made from the action items identified last meeting
+
+max - originally doing an active low pass filter but dc offset killed low frequency with big capacitor and switching to a passive low pass filter and voltage divider to mitigate
+that concern using 2 khz cut off low pass filter
+making logic level shifter and making all components run off twelve volts
+make ecu have a +12v 
+
+Jeremy - no updates on presentation c++ doc reading going well
+
+
+Ethan - SPI nothing done so far raspberry pi pico library installed and compiling and by monday make sure that you load some code onto pico
+
+Lucian - Ordering new hall effect sensors 
+	 Pre assign a mac address to raspberry pi
+	 Add npss sim stuff to pdr slides
+	 
+
+general note pico has up to a 5.5 volt tolerant power supply
+
+Abigail - Making a default jet engine in simulink
+
+
+
+
