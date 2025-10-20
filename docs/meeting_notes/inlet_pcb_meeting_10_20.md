@@ -11,8 +11,6 @@
 - Continuing work on system-level modeling to support ECU control logic validation.
 
 **Action Items (Next 2 Weeks):**
-- [ ] Refine Simulink model to simulate ECU–inlet PCB data exchange (SPI and PWM timing).  
-- [ ] Coordinate with Ethan to align simulated SPI timing with actual embedded implementation.  
 - [ ] Provide updated model results and diagrams for next meeting.
 
 ---
