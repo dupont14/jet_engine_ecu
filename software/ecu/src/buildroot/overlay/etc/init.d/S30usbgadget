@@ -1,0 +1,31 @@
+#!/bin/sh
+
+case "$1" in
+    start)
+        modprobe libcomposite
+
+        G=/sys/kernel/config/usb_gadget/pi0
+        mkdir -p $G
+        echo 0x1d6b > $G/idVendor
+        echo 0x0104 > $G/idProduct
+        echo 0x0100 > $G/bcdDevice
+        echo 0x0200 > $G/bcdUSB
+
+        mkdir -p $G/strings/0x409
+        echo "1234567890" > $G/strings/0x409/serialnumber
+        echo "Raspberry Pi" > $G/strings/0x409/manufacturer
+        echo "Pi Zero Gadget" > $G/strings/0x409/product
+
+        mkdir -p $G/configs/c.1/strings/0x409
+        echo "Config 1" > $G/configs/c.1/strings/0x409/configuration
+
+        mkdir -p $G/functions/ecm.usb0
+        ln -s $G/functions/ecm.usb0 $G/configs/c.1/
+
+        echo fe980000.usb > $G/UDC
+        ifconfig usb0 192.168.7.2 up
+        ;;
+    stop)
+        ifconfig usb0 down
+        ;;
+esac

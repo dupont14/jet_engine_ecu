@@ -1,0 +1,34 @@
+#!/bin/sh
+
+### BEGIN INIT INFO
+# Provides:          sshd
+# Required-Start:    $network
+# Default-Start:     2 3 4 5
+### END INIT INFO
+
+DAEMON=/usr/sbin/sshd
+PIDFILE=/var/run/sshd.pid
+
+case "$1" in
+  start)
+    echo "Starting OpenSSH..."
+    mkdir -p /var/run
+    # Make sure host keys exist
+    if [ ! -f /etc/ssh/ssh_host_rsa_key ]; then
+        ssh-keygen -A
+    fi
+    $DAEMON
+    ;;
+  stop)
+    echo "Stopping OpenSSH..."
+    kill "$(cat $PIDFILE)"
+    ;;
+  restart)
+    $0 stop
+    sleep 1
+    $0 start
+    ;;
+  *)
+    echo "Usage: $0 {start|stop|restart}"
+    exit 1
+esac
