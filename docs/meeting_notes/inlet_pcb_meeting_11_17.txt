@@ -1,0 +1,18 @@
+### INLET MEETING 11/17
+
+Abigail - progess will increase over break
+
+Ethan - progress will increase this week need a master script for the pico
+
+Jeremy - Finalize PCB design 
+
+Lucian - Write master spi script for ethan
+
+Max - 	make a meeting between the engine team 
+	
+	solder jumper to switch to on board and offboard circuit
+	
+	test actual distance with current circuit from the magnet to hall effect sensor
+	
+	number one priority -> test the hall effect distance
+

@@ -1,0 +1,30 @@
+abigail: 
+talking to professor blinn this week and will be continuing simulink 
+modelling
+
+ethan:
+is getting stream of zero while spi is not supposed to be sending spi
+
+Worried if clock will downgrade clock of the slave SPI device
+
+jeremy:
+did nothing
+
+max:
+added noise, output is clean and works correctly, testing aparratus for 
+hall effect sensor is finsished max is testing later today.
+
+lucian: 
+ask nolan if motor has been selected with appropriate speed
+
+action items for next week
+
+ethan:
+getting pwm signal working with h bridge
+
+max: 
+will be testing new hall effect sensor on test apparatus for next meeting
+could also do -5 and +5 volt amplification on PCB
+also looking for comperable single package surface mount comparator.
+
+might be able to daughterboard a h-bridge
