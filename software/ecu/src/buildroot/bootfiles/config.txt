@@ -15,6 +15,8 @@ kernel=zImage
 # Disable overscan assuming the display supports displaying the full resolution
 # If the text shown on the screen disappears off the edge, comment this out
 disable_overscan=1
+dtparam=audio=off
+
 
 # How much memory in MB to assign to the GPU on Pi models having
 # 256, 512 or 1024 MB total memory
@@ -25,4 +27,4 @@ gpu_mem_1024=100
 # Enable ethernet gadget and other things
 dtoverlay=dwc2 
 dtoverlay=vc4-kms-v3dy
-dtoverlay=pwm
+dtoverlay=pwm-2chan
