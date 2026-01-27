@@ -27,4 +27,4 @@ gpu_mem_1024=100
 # Enable ethernet gadget and other things
 dtoverlay=dwc2 
 dtoverlay=vc4-kms-v3dy
-dtoverlay=pwm-2chan
+dtoverlay=pwm,pin=18,func=2

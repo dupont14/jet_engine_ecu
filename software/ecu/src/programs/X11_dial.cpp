@@ -19,6 +19,7 @@ void write_file(const char *path, int value)
 int main()
 {
     // Initialize PWM
+    write_file( "/sys/class/pwm/pwmchip0/export", 0)
     write_file(PWM_PATH "/period", PERIOD_NS);
     write_file(PWM_PATH "/enable", 1);
 
